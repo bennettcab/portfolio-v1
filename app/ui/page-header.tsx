@@ -11,7 +11,7 @@ export default function PageHeader() {
   ];
 
   return (
-    <header className="my-10 w-xs">
+    <header className="my-10 w-66">
       <h1 className="text-[4rem]/[1.21] font-extralight text-white uppercase">
         Chad Bennett
       </h1>
