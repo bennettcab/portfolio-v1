@@ -21,15 +21,15 @@ export default function Home() {
           >
             igniterecognition.com
           </a>
-          ), an employee engagement website and mobile app with the goal to make
-          work fun. I spent about half of my time designing new pages and
+          ), an employee engagement website and mobile app with the goal of
+          making work fun. I spent about half of my time designing new pages and
           components for Ignite and the other half as the go-to guy, assisting
-          with user interface & email development or creating graphics for sales
-          & marketing.
+          with user interface and email development or creating graphics for
+          sales and marketing.
         </>,
       ],
       skills: [
-        "Javascript",
+        "JavaScript",
         "TypeScript",
         "Vue",
         "Vuetify",
@@ -41,22 +41,22 @@ export default function Home() {
       ],
     },
     {
-      title: "Frontend Web Developer",
+      title: "Front-End Web Developer",
       companyName: "MyMediabox, a division of Jonas Software USA",
       timeFrame: "2013 - 2015",
       descriptionParagraphs: [
         "Developed, upgraded, and maintained three web-based applications used for licensing intellectual property rights. Designed and implemented an icon suite used throughout the applications.",
       ],
-      skills: ["Javascript", "HTML", "CSS", "Adobe Photoshop"],
+      skills: ["JavaScript", "HTML", "CSS", "Adobe Photoshop"],
     },
     {
       title: "User Interface Developer",
       companyName: "Touchstone Group Associates*",
       timeFrame: "2007 - 2013",
       descriptionParagraphs: [
-        "Developed and maintained pixel perfect user interfaces for employee engagement websites. Clients include Volkswagen, BMW, Audi, and Fifth Third Bank.",
+        "Developed and maintained pixel-perfect user interfaces for employee engagement websites. Clients included Volkswagen, BMW, Audi, and Fifth Third Bank.",
         <span className="text-xs italic">
-          * Not a copy & paste error. I did work for Touchstone twice.
+          * Not a copy-and-paste error. I did work for Touchstone twice.
         </span>,
       ],
       skills: [
@@ -64,7 +64,7 @@ export default function Home() {
         "CSS",
         "DotNetNuke",
         "Flash",
-        "Actionscript",
+        "ActionScript",
         "Adobe Photoshop",
       ],
     },
@@ -73,7 +73,7 @@ export default function Home() {
     {
       title: "Store Checkout",
       descriptionParagraphs: [
-        "This was a fun one. Developing checkout pages correctly is critical. The Ignite Recognition checkout  increases the degree of difficulty with business rules accounting for 1099 status and digital / physical delivery.",
+        "This was a fun one. Developing checkout pages correctly is critical. The Ignite Recognition checkout increases the degree of difficulty with business rules accounting for 1099 status and digital/physical product delivery.",
       ],
       thumnailName: "StoreCheckout",
       skills: ["Design", "Development", "TypeScript", "Vue", "Vuetify"],
@@ -81,7 +81,7 @@ export default function Home() {
     {
       title: "Order Management Improvement",
       descriptionParagraphs: [
-        "In order to provide customer service with missing information on a Store Order management page I exceeded expectations on a project with a quick turn around time.",
+        "To improve a customer support page that was missing key information, I exceeded expectations on a project with a quick turnaround.",
       ],
       thumnailName: "StoreOrderManagement",
       skills: ["Development", "TypeScript", "Vue", "Vuetify"],
@@ -109,12 +109,12 @@ export default function Home() {
             marketing materials.{" "}
             <em className="bg-orange-400/50 px-2 py-1.5 font-medium text-white italic">
               I enjoy the challenge of turning complicated business requirements
-              into simple experiences for end users.
+              into intuitive experiences for end users.
             </em>
           </p>
           <p className="my-3 font-light">
-            My process is collaborative and detail oriented, with the goal to
-            bring consistency and clarity to every page and component I make.
+            My process is collaborative and detail-oriented, with the goal of
+            bringing consistency and clarity to every page and component I make.
             Working on smaller, nimble teams during my career has taught me to
             be versatile and adaptable. In my previous job I was the go-to guy
             when you needed extra coverage here or some design help there.
@@ -122,7 +122,7 @@ export default function Home() {
           <p className="my-3 font-light">
             After work hours I&rsquo;m usually trying to balance quality time
             with my wife and two daughters and making progress on that house or
-            car project. On my favorite days I&rsquo;m usually wandering some
+            car project. On my favorite days, I&rsquo;m usually wandering some
             landscape with a camera slung over my shoulder.
           </p>
         </div>

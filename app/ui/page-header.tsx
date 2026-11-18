@@ -5,7 +5,7 @@ export default function PageHeader() {
   const socials: SocialData[] = [
     { name: "GitHub", url: "https://github.com/bennettcab" },
     {
-      name: "Linkedin",
+      name: "LinkedIn",
       url: "https://www.linkedin.com/in/chad-bennett-a22367b0/",
     },
   ];
@@ -20,7 +20,7 @@ export default function PageHeader() {
         <div>User Experience Designer</div>
       </div>
       <p className="mt-4 mb-6">
-        I design and build web experiences for users to engage with the page.
+        I turn complicated ideas into simple, useful, and human web experiences.
       </p>
       <div className="flex flex-wrap text-white">
         {socials.map((data, index) => (

@@ -11,7 +11,7 @@ const interSans = Inter({
 export const metadata: Metadata = {
   title: "Chad Bennett - Web Developer & UX Designer",
   description:
-    "Portfolio site for showing the work I've done and learning new development skills in the process.",
+    "Portfolio for showcasing my past work and developing new skills as I continue to learn.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

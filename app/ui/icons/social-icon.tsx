@@ -5,7 +5,7 @@ export default function Icon({ name }: { name: string }) {
   switch (name) {
     case "GitHub":
       return <IconGitHub />;
-    case "Linkedin":
+    case "LinkedIn":
       return <IconLinkedin />;
   }
 }
