@@ -1,5 +1,5 @@
 import { SocialData } from "../lib/definitions";
-import Icon from "./icons/icon";
+import Icon from "./icons/social-icon";
 
 export default function PageHeader() {
   const socials: SocialData[] = [
