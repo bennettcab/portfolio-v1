@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ExperienceData, ProjectCardData } from "./lib/definitions";
 import ExperienceCard from "./ui/experience/experience-card";
-import PageHeader from "./ui/page-header";
 import ProjectCard from "./ui/project/project-card";
 import SectionHeader from "./ui/section-header";
 import { Paragraph } from "./ui/paragraph";
