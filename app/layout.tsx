@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "material-symbols";
+import PageHeader from "./ui/page-header";
 
 const interSans = Inter({
   variable: "--font-inter-sans",
@@ -17,7 +18,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${interSans.variable} h-full antialiased`}>
-      <body className="px-4">{children}</body>
+      <body className="px-4">
+        <div className="justify-center md:flex md:gap-12 lg:gap-24">
+          <PageHeader />
+          <main className="mt-10 max-w-2xl grow">{children}</main>
+        </div>
+      </body>
     </html>
   );
 }

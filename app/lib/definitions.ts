@@ -1,3 +1,5 @@
+import React from "react";
+
 export type ExperienceData = {
   title: string;
   companyName: string;
@@ -24,3 +26,12 @@ export type ThumbnailNames =
   | "StoreCheckout"
   | "StoreOrderManagement"
   | "ChallengeClaimDetails";
+
+export type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
+  size?: "sm" | "base" | "lg";
+  variant?: "default" | "muted";
+};
+
+export type SectionHeaderProps = React.HTMLAttributes<HTMLHeadingElement> & {
+  headingLevel?: "h2" | "h3";
+};
