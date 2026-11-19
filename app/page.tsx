@@ -134,7 +134,7 @@ export default function Home() {
         ))}
         <div className="text-xs italic">* More info coming soon...</div>
       </div>
-      <div className="mb-8">
+      <div>
         <SectionHeader headingLevel="h2">Experience</SectionHeader>
         {experienceData.map((data, index) => (
           <div key={index} className="mb-4 last:mb-0">
