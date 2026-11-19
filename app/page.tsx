@@ -4,6 +4,7 @@ import ExperienceCard from "./ui/experience/experience-card";
 import ProjectCard from "./ui/project/project-card";
 import SectionHeader from "./ui/section-header";
 import { Paragraph } from "./ui/paragraph";
+import { LinkStyles } from "./lib/constants";
 
 export default function Home() {
   const experienceData: ExperienceData[] = [
@@ -13,15 +14,15 @@ export default function Home() {
       timeFrame: "2015 - Oct. 2026",
       descriptionParagraphs: [
         <>
-          Designed and developed Ignite Recognition (
+          Designed and developed{" "}
           <a
             href="https://www3.igniterecognition.com"
             target="_blank"
-            className="text-orange-400 underline hover:text-orange-300"
+            className={LinkStyles}
           >
-            igniterecognition.com
+            Ignite Recognition
           </a>
-          ), an employee engagement website and mobile app with the goal of
+          , an employee engagement website and mobile app with the goal of
           making work fun. I spent about half of my time designing new pages and
           components for Ignite and the other half as the go-to guy, assisting
           with user interface and email development or creating graphics for
