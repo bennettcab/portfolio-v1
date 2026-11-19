@@ -21,7 +21,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="px-4">
         <div className="justify-center md:flex md:gap-12 lg:gap-24">
           <PageHeader />
-          <main className="mt-10 max-w-2xl grow">{children}</main>
+          <main className="my-10 max-w-2xl grow">{children}</main>
         </div>
       </body>
     </html>
