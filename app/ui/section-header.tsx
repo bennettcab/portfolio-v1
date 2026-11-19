@@ -9,6 +9,7 @@ export default function SectionHeader({
   const headingLevels = {
     h2: "mb-3 text-orange-400 uppercase",
     h3: "font-medium text-white",
+    h4: "ont-medium text-white text-sm",
   };
 
   switch (headingLevel) {
@@ -29,6 +30,15 @@ export default function SectionHeader({
         >
           {children}
         </h3>
+      );
+    case "h4":
+      return (
+        <h4
+          className={`${headingLevels[headingLevel]} ${className}`.trim()}
+          {...props}
+        >
+          {children}
+        </h4>
       );
   }
 }

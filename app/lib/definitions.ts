@@ -33,5 +33,5 @@ export type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
 };
 
 export type SectionHeaderProps = React.HTMLAttributes<HTMLHeadingElement> & {
-  headingLevel?: "h2" | "h3";
+  headingLevel?: "h2" | "h3" | "h4";
 };
