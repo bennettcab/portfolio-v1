@@ -33,5 +33,14 @@ export type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
 };
 
 export type SectionHeaderProps = React.HTMLAttributes<HTMLHeadingElement> & {
-  headingLevel?: "h2" | "h3" | "h4";
+  as?: "h2" | "h3" | "h4";
+  children: React.ReactNode;
+  className?: string;
+  backButton?: boolean;
+};
+
+export type BackButtonProps = {
+  fallbackHref?: string;
+  children?: React.ReactNode;
+  className?: string;
 };

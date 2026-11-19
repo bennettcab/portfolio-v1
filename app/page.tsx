@@ -100,7 +100,7 @@ export default function Home() {
   return (
     <>
       <div className="mb-8">
-        <SectionHeader headingLevel="h2">About</SectionHeader>
+        <SectionHeader as="h2">About</SectionHeader>
         <Paragraph>
           Hi, I&rsquo;m Chad and I&rsquo;m looking for a new opportunity.
           I&rsquo;m a Web Developer and User Experience Designer with experience
@@ -126,7 +126,7 @@ export default function Home() {
         </Paragraph>
       </div>
       <div className="mb-8">
-        <SectionHeader headingLevel="h2">Projects</SectionHeader>
+        <SectionHeader as="h2">Projects</SectionHeader>
         {projectCardsData.map((data, index) => (
           <div key={index} className="mb-4 last:mb-0">
             <ProjectCard cardData={data} />
@@ -135,7 +135,7 @@ export default function Home() {
         <div className="text-xs italic">* More info coming soon...</div>
       </div>
       <div>
-        <SectionHeader headingLevel="h2">Experience</SectionHeader>
+        <SectionHeader as="h2">Experience</SectionHeader>
         {experienceData.map((data, index) => (
           <div key={index} className="mb-4 last:mb-0">
             <ExperienceCard experienceData={data} />

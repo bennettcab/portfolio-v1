@@ -1,44 +1,31 @@
 import { SectionHeaderProps } from "../lib/definitions";
+import BackButton from "./back-button";
 
 export default function SectionHeader({
-  headingLevel = "h2",
+  as: Component = "h2",
   className = "",
   children,
+  backButton = false,
   ...props
 }: SectionHeaderProps) {
-  const headingLevels = {
-    h2: "mb-3 text-orange-400 uppercase",
+  const Heading = Component;
+  const headingStyles = {
+    h2: "text-orange-400 uppercase",
     h3: "font-medium text-white",
-    h4: "ont-medium text-white text-sm",
+    h4: "font-medium text-white text-sm",
   };
 
-  switch (headingLevel) {
-    case "h2":
-      return (
-        <h2
-          className={`${headingLevels[headingLevel]} ${className}`.trim()}
-          {...props}
-        >
-          {children}
-        </h2>
-      );
-    case "h3":
-      return (
-        <h3
-          className={`${headingLevels[headingLevel]} ${className}`.trim()}
-          {...props}
-        >
-          {children}
-        </h3>
-      );
-    case "h4":
-      return (
-        <h4
-          className={`${headingLevels[headingLevel]} ${className}`.trim()}
-          {...props}
-        >
-          {children}
-        </h4>
-      );
-  }
+  return (
+    <div
+      className={`${backButton ? "flex justify-between" : undefined} ${Heading === "h2" ? "mb-3" : undefined}`.trim()}
+    >
+      <Heading
+        className={`${headingStyles[Heading]} ${className}`.trim()}
+        {...props}
+      >
+        {children}
+      </Heading>
+      {backButton ? <BackButton /> : null}
+    </div>
+  );
 }
