@@ -2,6 +2,7 @@ import { ProjectCardData } from "@/app/lib/definitions";
 import SkillsChips from "../skills-chips";
 import Link from "next/link";
 import Thumbnail from "../thumbnail/thumbnail";
+import { Paragraph } from "../paragraph";
 
 export default function ProjectCard({
   cardData,
@@ -22,12 +23,12 @@ export default function ProjectCard({
               : "font-medium text-white"
           }
         >
-          {cardData.title}*
+          {cardData.title}
         </h3>
         {cardData.descriptionParagraphs.map((paragraph, index) => (
-          <p key={index} className="mb-2 text-sm font-light">
+          <Paragraph size="sm" className="mt-0" key={index}>
             {paragraph}
-          </p>
+          </Paragraph>
         ))}
         <SkillsChips skills={cardData.skills} />
       </div>
