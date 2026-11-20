@@ -25,7 +25,8 @@ export type ThumbnailNames =
   | undefined
   | "StoreCheckout"
   | "StoreOrderManagement"
-  | "ChallengeClaimDetails";
+  | "ChallengeClaimDetails"
+  | "IgniteGames";
 
 export type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
   size?: "sm" | "base" | "lg";

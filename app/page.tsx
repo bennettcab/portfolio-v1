@@ -72,29 +72,38 @@ export default function Home() {
   ];
   const projectCardsData: ProjectCardData[] = [
     {
-      title: "Store Checkout*",
+      title: "Ignite Games",
+      linkUrl: "/projects/ignite-games",
       descriptionParagraphs: [
-        "This was a fun one. Developing checkout pages correctly is critical. The Ignite Recognition checkout increases the degree of difficulty with business rules accounting for 1099 status and digital/physical product delivery.",
+        "I had a lot of fun with this project and designed some retro style games to give out a randomly selected reward amount.",
       ],
-      thumnailName: "StoreCheckout",
-      skills: ["Design", "Development", "TypeScript", "Vue", "Vuetify"],
+      thumnailName: "IgniteGames",
+      skills: ["Design", "Adobe XD", "Adobe Photoshop", "Adobe Illustrator"],
     },
-    {
-      title: "Order Management Improvement*",
-      descriptionParagraphs: [
-        "To improve a customer support page that was missing key information, I exceeded expectations on a project with a quick turnaround.",
-      ],
-      thumnailName: "StoreOrderManagement",
-      skills: ["Development", "TypeScript", "Vue", "Vuetify"],
-    },
-    {
-      title: "Claim Program*",
-      descriptionParagraphs: [
-        "This is one of Ignite Recognition’s tent poles. Users submit a claim and upon manager approval they earn a points reward.",
-      ],
-      thumnailName: "ChallengeClaimDetails",
-      skills: ["Design", "Development", "TypeScript", "Vue", "Vuetify"],
-    },
+    // {
+    //   title: "Store Checkout*",
+    //   descriptionParagraphs: [
+    //     "This was a fun one. Developing checkout pages correctly is critical. The Ignite Recognition checkout increases the degree of difficulty with business rules accounting for 1099 status and digital/physical product delivery.",
+    //   ],
+    //   thumnailName: "StoreCheckout",
+    //   skills: ["Design", "Development", "TypeScript", "Vue", "Vuetify"],
+    // },
+    // {
+    //   title: "Order Management Improvement*",
+    //   descriptionParagraphs: [
+    //     "To improve a customer support page that was missing key information, I exceeded expectations on a project with a quick turnaround.",
+    //   ],
+    //   thumnailName: "StoreOrderManagement",
+    //   skills: ["Development", "TypeScript", "Vue", "Vuetify"],
+    // },
+    // {
+    //   title: "Claim Program*",
+    //   descriptionParagraphs: [
+    //     "This is one of Ignite Recognition’s tent poles. Users submit a claim and upon manager approval they earn a points reward.",
+    //   ],
+    //   thumnailName: "ChallengeClaimDetails",
+    //   skills: ["Design", "Development", "TypeScript", "Vue", "Vuetify"],
+    // },
   ];
 
   return (
@@ -132,7 +141,7 @@ export default function Home() {
             <ProjectCard cardData={data} />
           </div>
         ))}
-        <div className="text-xs italic">* More info coming soon...</div>
+        <div className="text-xs italic">More projects coming soon...</div>
       </div>
       <div>
         <SectionHeader as="h2">Experience</SectionHeader>
