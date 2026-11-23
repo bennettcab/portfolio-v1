@@ -15,8 +15,8 @@ export default function PageHeader() {
     <header className="my-10 w-66">
       <h1 className="text-[4rem]/[1.21] font-extralight text-white uppercase">
         <Link href="/">
-          <span className="relative inline-block before:absolute before:-inset-1 before:block before:-skew-y-3 hover:before:bg-orange-400/50">
-            <span className="relative text-white">Chad Bennett</span>
+          <span className="relative inline-block text-white before:absolute before:-inset-1 before:block before:-skew-y-3 hover:before:bg-orange-400/50">
+            <span className="relative">Chad Bennett</span>
           </span>
         </Link>
       </h1>
