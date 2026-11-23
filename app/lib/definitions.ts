@@ -1,3 +1,5 @@
+import React from "react";
+
 export type ExperienceData = {
   title: string;
   companyName: string;
@@ -23,4 +25,23 @@ export type ThumbnailNames =
   | undefined
   | "StoreCheckout"
   | "StoreOrderManagement"
-  | "ChallengeClaimDetails";
+  | "ChallengeClaimDetails"
+  | "IgniteGames";
+
+export type ParagraphProps = React.HTMLAttributes<HTMLParagraphElement> & {
+  size?: "sm" | "base" | "lg";
+  variant?: "default" | "muted";
+};
+
+export type SectionHeaderProps = React.HTMLAttributes<HTMLHeadingElement> & {
+  as?: "h2" | "h3" | "h4";
+  children: React.ReactNode;
+  className?: string;
+  backButton?: boolean;
+};
+
+export type BackButtonProps = {
+  fallbackHref?: string;
+  children?: React.ReactNode;
+  className?: string;
+};
