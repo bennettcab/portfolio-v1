@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ExperienceData, ProjectCardData } from "./lib/definitions";
 import ExperienceCard from "./ui/experience/experience-card";
+import InlineLink from "./ui/inline-link";
 import ProjectCard from "./ui/project/project-card";
 import SectionHeader from "./ui/section-header";
 import { Paragraph } from "./ui/paragraph";
-import { LinkStyles } from "./lib/constants";
 
 export default function Home() {
   const experienceData: ExperienceData[] = [
@@ -15,13 +15,12 @@ export default function Home() {
       descriptionParagraphs: [
         <>
           Designed and developed{" "}
-          <a
+          <InlineLink
             href="https://www3.igniterecognition.com"
-            target="_blank"
-            className={LinkStyles}
+            openInNewWindow
           >
             Ignite Recognition
-          </a>
+          </InlineLink>
           , an employee engagement website and mobile app with the goal of
           making work fun. I spent about half of my time designing new pages and
           components for Ignite and the other half as the go-to guy, assisting

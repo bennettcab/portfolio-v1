@@ -1,4 +1,5 @@
 import { Paragraph } from "@/app/ui/paragraph";
+import InlineLink from "@/app/ui/inline-link";
 import SectionHeader from "@/app/ui/section-header";
 import Image from "next/image";
 import ImageSpaceRace1 from "/public/images/projects/ignite-games/space-race-1.png";
@@ -10,7 +11,6 @@ import ImageScratchOff2 from "/public/images/projects/ignite-games/scratch-off-2
 import ImagePlinkGo1 from "/public/images/projects/ignite-games/plink-go-1.png";
 import ImagePlinkGo2 from "/public/images/projects/ignite-games/plink-go-2.png";
 import ImagePlinkGo3 from "/public/images/projects/ignite-games/plink-go-3.png";
-import { LinkStyles } from "@/app/lib/constants";
 
 export default function StoreCheckoutPage() {
   return (
@@ -28,13 +28,12 @@ export default function StoreCheckoutPage() {
         </Paragraph>
         <Paragraph>
           A couple years back I was tasked to design some games for{" "}
-          <a
+          <InlineLink
             href="https://www3.igniterecognition.com"
-            target="_blank"
-            className={LinkStyles}
+            openInNewWindow
           >
             Ignite Recognition
-          </a>
+          </InlineLink>
           . We wanted to create some variety in the game rewards we offered in
           our product. In Ignite, games are really just a fun way to get a
           randomly selected reward amount. Our business rules didn’t allow user
