@@ -17,7 +17,7 @@ export default function PageHeader() {
   return (
     <header className="my-10 w-66">
       <h1 className="text-[4rem]/[1.21] font-extralight text-white uppercase">
-        <Link href="/" className="group">
+        <Link href="/" className="group cursor-pointer">
           <span className={`before:-skew-y-2 ${homeLinkClasses}`}>
             <span className="relative">Chad</span>
           </span>{" "}
