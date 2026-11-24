@@ -1,5 +1,5 @@
 import { Paragraph } from "@/app/ui/paragraph";
-import InlineLink from "@/app/ui/inline-link";
+import AppLink from "@/app/ui/link-app";
 import SectionHeader from "@/app/ui/section-header";
 import Image from "next/image";
 import ImageSpaceRace1 from "/public/images/projects/ignite-games/space-race-1.png";
@@ -28,12 +28,9 @@ export default function StoreCheckoutPage() {
         </Paragraph>
         <Paragraph>
           A couple years back I was tasked to design some games for{" "}
-          <InlineLink
-            href="https://www3.igniterecognition.com"
-            openInNewWindow
-          >
+          <AppLink href="https://www3.igniterecognition.com" openInNewWindow>
             Ignite Recognition
-          </InlineLink>
+          </AppLink>
           . We wanted to create some variety in the game rewards we offered in
           our product. In Ignite, games are really just a fun way to get a
           randomly selected reward amount. Our business rules didn’t allow user

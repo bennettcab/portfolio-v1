@@ -46,8 +46,9 @@ export type BackButtonProps = {
   className?: string;
 };
 
-export type InlineLinkProps = {
+export type AppLinkProps = {
   href: string;
   openInNewWindow?: boolean;
   children: React.ReactNode;
+  className?: string;
 };

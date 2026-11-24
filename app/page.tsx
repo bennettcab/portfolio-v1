@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ExperienceData, ProjectCardData } from "./lib/definitions";
 import ExperienceCard from "./ui/experience/experience-card";
-import InlineLink from "./ui/inline-link";
+import AppLink from "./ui/link-app";
 import ProjectCard from "./ui/project/project-card";
 import SectionHeader from "./ui/section-header";
 import { Paragraph } from "./ui/paragraph";
@@ -15,12 +15,9 @@ export default function Home() {
       descriptionParagraphs: [
         <>
           Designed and developed{" "}
-          <InlineLink
-            href="https://www3.igniterecognition.com"
-            openInNewWindow
-          >
+          <AppLink href="https://www3.igniterecognition.com" openInNewWindow>
             Ignite Recognition
-          </InlineLink>
+          </AppLink>
           , an employee engagement website and mobile app with the goal of
           making work fun. I spent about half of my time designing new pages and
           components for Ignite and the other half as the go-to guy, assisting
@@ -150,13 +147,13 @@ export default function Home() {
           </div>
         ))}
         <div>
-          <Link
+          <AppLink
             href="/resume.pdf"
-            target="_blank"
-            className="inline-flex items-center font-medium text-white after:ml-1 after:font-[Material_Symbols_Outlined] after:text-xl after:leading-0 after:content-['arrow\_outward'] hover:text-orange-400 hover:after:mb-1 hover:after:ml-2"
+            openInNewWindow
+            className="inline-flex items-center after:z-10 after:ml-1 after:font-[Material_Symbols_Outlined] after:text-xl after:leading-0 after:content-['arrow\_outward'] hover:after:mb-1 hover:after:ml-2 hover:after:text-white"
           >
-            View My Resume
-          </Link>
+            View my resume
+          </AppLink>
         </div>
       </div>
     </>
