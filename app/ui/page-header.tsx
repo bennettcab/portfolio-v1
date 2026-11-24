@@ -11,12 +11,18 @@ export default function PageHeader() {
     },
   ];
 
+  const homeLinkClasses =
+    "relative inline-block before:absolute before:-inset-1 before:block group-hover:text-white group-hover:before:bg-orange-400/50";
+
   return (
     <header className="my-10 w-66">
       <h1 className="text-[4rem]/[1.21] font-extralight text-white uppercase">
-        <Link href="/">
-          <span className="relative inline-block text-white before:absolute before:-inset-1 before:block before:-skew-y-3 hover:before:bg-orange-400/50">
-            <span className="relative">Chad Bennett</span>
+        <Link href="/" className="group">
+          <span className={`before:-skew-y-2 ${homeLinkClasses}`}>
+            <span className="relative">Chad</span>
+          </span>{" "}
+          <span className={`before:-skew-y-1 ${homeLinkClasses}`}>
+            <span className="relative">Bennett</span>
           </span>
         </Link>
       </h1>
