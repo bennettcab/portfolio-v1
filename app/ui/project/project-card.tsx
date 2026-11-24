@@ -18,15 +18,15 @@ export default function ProjectCard({
         <h3
           className={
             cardData.linkUrl
-              ? "inline-flex items-center font-medium text-white group-hover:text-orange-400 after:ml-1 after:font-[Material_Symbols_Outlined] after:text-2xl after:leading-0 group-hover:after:ml-2" +
+              ? "relative inline-flex cursor-pointer items-center font-medium text-orange-400 group-hover:text-white before:absolute before:-inset-1 before:block before:-skew-y-2 group-hover:before:bg-orange-400/50 after:ml-1 after:font-[Material_Symbols_Outlined] after:text-2xl after:leading-0 group-hover:after:z-10 group-hover:after:ml-2" +
                 String.raw` after:content-['chevron\_right']`
               : "font-medium text-white"
           }
         >
-          {cardData.title}
+          <span className="relative">{cardData.title}</span>
         </h3>
         {cardData.descriptionParagraphs.map((paragraph, index) => (
-          <Paragraph size="sm" className="mt-0" key={index}>
+          <Paragraph size="sm" className="mt-1" key={index}>
             {paragraph}
           </Paragraph>
         ))}
