@@ -45,3 +45,10 @@ export type BackButtonProps = {
   children?: React.ReactNode;
   className?: string;
 };
+
+export type AppLinkProps = {
+  href: string;
+  openInNewWindow?: boolean;
+  children: React.ReactNode;
+  className?: string;
+};

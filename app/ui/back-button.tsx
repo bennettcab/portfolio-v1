@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { BackButtonProps } from "../lib/definitions";
+import { LinkStyles } from "../lib/constants";
 
 export default function BackButton({
   fallbackHref = "/",
@@ -22,9 +23,13 @@ export default function BackButton({
     <button
       type="button"
       onClick={handleBack}
-      className={`inline-flex cursor-pointer items-center self-start font-medium text-white before:mr-1 before:font-[Material_Symbols_Outlined] before:text-2xl before:leading-0 ${String.raw`before:content-['chevron\_left']`} hover:text-orange-400 hover:before:mr-2 ${className}`.trim()}
+      className={`group ${LinkStyles} ${className}`.trim()}
     >
-      {children}
+      <span
+        className={`relative inline-flex items-center before:mr-1 before:font-[Material_Symbols_Outlined] before:text-2xl before:leading-0 ${String.raw`before:content-['chevron\_left']`} group-hover:before:mr-2`}
+      >
+        {children}
+      </span>
     </button>
   );
 }
