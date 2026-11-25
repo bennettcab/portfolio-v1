@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "material-symbols";
-import PageHeader from "./ui/page-header";
+import PageHeader from "./ui/header-page";
 
 const interSans = Inter({
   variable: "--font-inter-sans",

@@ -1,7 +1,7 @@
 import { ExperienceData } from "@/app/lib/definitions";
-import SkillsChips from "../skills-chips";
-import { Paragraph } from "../paragraph";
-import SectionHeader from "../section-header";
+import SkillsChips from "../chips-skills";
+import { Paragraph } from "../text-paragraph";
+import SectionHeader from "../header-section";
 
 export default function ExperienceCard({
   experienceData,

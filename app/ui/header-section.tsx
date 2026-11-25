@@ -1,5 +1,5 @@
 import { SectionHeaderProps } from "../lib/definitions";
-import BackButton from "./back-button";
+import BackButton from "./button-back";
 
 export default function SectionHeader({
   as: Component = "h2",
