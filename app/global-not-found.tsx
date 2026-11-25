@@ -26,14 +26,15 @@ export default function GlobalNotFound() {
             priority
             placeholder="blur"
             sizes="100vw"
+            className="-z-10 object-cover object-center"
           />
           <main className="relative z-10 flex min-h-screen flex-col items-center justify-center p-8 text-white">
             <p className="text-sm font-medium text-orange-400">404</p>
             <h1 className="mt-2 text-3xl font-thin uppercase sm:text-5xl">
               Page not found
             </h1>
-            <p className="mt-4 max-w-md text-base text-gray-400">
-              Getting lost isn't always a bad thing.
+            <p className="mt-4 max-w-md text-center text-base font-light text-gray-400 italic">
+              Getting lost dosen't always have to be a bad thing.
             </p>
             <div className="mt-8">
               <Link href="/" className={`group ${LinkStyles}`}>
