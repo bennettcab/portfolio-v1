@@ -4,7 +4,6 @@ import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Image404 from "@/public/images/404.jpg";
-import Link from "next/link";
 import { LinkStyles } from "./lib/constants";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -37,11 +36,11 @@ export default function GlobalNotFound() {
               Getting lost dosen't always have to be a bad thing.
             </p>
             <div className="mt-8">
-              <Link href="/" className={`group ${LinkStyles}`}>
+              <a href="/" className={`group ${LinkStyles}`}>
                 <span className="relative inline-flex items-center before:mr-2 before:font-[Material_Symbols_Outlined] before:text-2xl before:leading-0 before:content-['home']">
                   Back to home
                 </span>
-              </Link>
+              </a>
             </div>
           </main>
         </div>
