@@ -1,8 +1,8 @@
 import { ProjectCardData } from "@/app/lib/definitions";
-import SkillsChips from "../skills-chips";
+import SkillsChips from "../chips-skills";
 import Link from "next/link";
 import Thumbnail from "../thumbnail/thumbnail";
-import { Paragraph } from "../paragraph";
+import { Paragraph } from "../text-paragraph";
 
 export default function ProjectCard({
   cardData,

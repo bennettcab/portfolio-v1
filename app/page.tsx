@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { ExperienceData, ProjectCardData } from "./lib/definitions";
-import ExperienceCard from "./ui/experience/experience-card";
+import ExperienceCard from "./ui/experience/card";
 import AppLink from "./ui/link-app";
-import ProjectCard from "./ui/project/project-card";
-import SectionHeader from "./ui/section-header";
-import { Paragraph } from "./ui/paragraph";
+import ProjectCard from "./ui/project/card";
+import SectionHeader from "./ui/header-section";
+import { Paragraph } from "./ui/text-paragraph";
 
 export default function Home() {
   const experienceData: ExperienceData[] = [

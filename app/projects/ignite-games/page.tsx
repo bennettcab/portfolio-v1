@@ -1,6 +1,6 @@
-import { Paragraph } from "@/app/ui/paragraph";
+import { Paragraph } from "@/app/ui/text-paragraph";
 import AppLink from "@/app/ui/link-app";
-import SectionHeader from "@/app/ui/section-header";
+import SectionHeader from "@/app/ui/header-section";
 import Image from "next/image";
 import ImageSpaceRace1 from "/public/images/projects/ignite-games/space-race-1.png";
 import ImageSpaceRace2 from "/public/images/projects/ignite-games/space-race-2.png";
